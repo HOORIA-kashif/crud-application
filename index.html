@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+<body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>📋 Tasker</h2>
+        <nav>
+          <ul>
+            <li>All Tasks</li>
+            <li>Completed</li>
+            <li>Settings</li>
+          </ul>
+        </nav>
+      </aside>
+  
+      <!-- Main Area -->
+      <main class="main-content">
+        <header class="topbar">
+          <h1>Task Manager</h1>
+          <button id="add-button">+ Add Task</button>
+        </header>
+  
+        <section class="task-list" id="task-list"></section>
+      </main>
+    </div>
+  
+    <!-- Task Modal -->
+    <div id="taskModal" class="modal hidden">
+      <div class="modal-content">
+        <h2 id="modalTitle">Add Task</h2>
+        <input type="text" id="taskTitle" placeholder="Task Title">
+        <textarea id="taskDesc" placeholder="Task Description"></textarea>
+        <button id="saveTaskBtn">Save</button>
+        <button id="closeModelBtn">Cancel</button>
+      </div>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+  
+</html>
